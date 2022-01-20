@@ -1,0 +1,43 @@
+.header__block__title {
+    margin-top: 60px;
+    font-size: 40px;
+    text-align: center;
+    color: rgb(14, 13, 13);
+    height: 50px;
+    // background-color: cadetblue;
+    font-family: Impact, fantasy;
+
+    transform: translate(-410px, 0px);
+    opacity: 0;
+    transition: all 0.8s ease 0.3s;
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+}
+#mark {
+    margin: 0;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    color: red;
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.activeBlock {
+    transform: translateY(0px);
+    opacity: 1;
+}

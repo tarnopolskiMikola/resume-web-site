@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+
+  <div class="header">
+    <div class="header__menu1" id="header__menu1">
+      <div class="header__menu__itemL" id="header__menu__item1">MY CV</div>
+      <div class="header__menu">
+        <div class="header__menu__item" id="header__menu__item2">ABOUT</div>
+        <div class="header__menu__item" id="header__menu__item2">SKILLS</div>
+        <div class="header__menu__item" id="header__menu__item5">PORTFOLIO</div>
+        <div class="header__menu__item" id="header__menu__item2">EXPERIENCE</div>
+        <div class="header__menu__item" id="header__menu__item6">CONTACT</div>
+
+      </div>
+    </div>
+
+    <div class="header__block">
+
+      <div data-aos="flip-right" class="header__block__photo" id="header__block__photo"></div>
+
+      <div class="header__block__title" id="t">TARNOPOLSKI MIKOLAY</div>
+      <div class="header__block__text" id="t1">WEB DEVELOPER, WEB DEVELOPER, WEB DEVELOPER </div>
+      <div class="header__block__bottom">
+        <div data-aos="fade-up-right" class="header__block__bottomG"> CALL MEE </div>
+        <div data-aos="fade-up-left" class="header__block__bottomG"></div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <main class="main">
+    <div class="wrapp">
+
+
+      <!-- data-aos="fade-up-right"  -->
+      <div class="information  reveal ">
+        <div class="information__basic">
+          <div class="information__title">About</div>
+          <div class="information__text">конкурентную заработную плату;
+            премии, бонусы и другие бенефиты;
+            команду лучших специалистов в своей отрасли, тотальное развитие;
+          </div>
+          <div class="information__text2"> гибкий график (начало работы с 8 до 11, 8 ч/день);
+            возможность работать в офисе или удаленно;
+            соц.пакет, 100% оплата отпусков и больничных;
+             </div>
+        </div>
+
+
+
+        <div class="information__basic2">
+          <div class="information__title2">
+            Basic Information
+          </div>
+          <div class="information__info">
+            <div class="information__n1">AGE:</div>
+            <div class="information__n2">25</div>
+          </div>
+          <div class="information__info">
+            <div class="information__n1">EMAIL:</div>
+            <div class="information__n2">tarnopolskijkola@gmail.com</div>
+          </div>
+          <div class="information__info">
+            <div class="information__n1">PHONE:</div>
+            <div class="information__n2">+380 66-252-37-76</div>
+          </div>
+          <div class="information__info">
+            <div class="information__n1">ADDRESS:</div>
+            <div class="information__n2">БАЖАНА 14a</div>
+          </div>
+          <div class="information__info">
+            <div class="information__n1">LANGUAGE:</div>
+            <div class="information__n2">English, Polish, Russian, Ukraine</div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="skills__title">PROFESSION SKILLS</div>
+
+      <div class="skills reveal" id="skills">
+        <div class="skills__block1">
+
+          <div class="skills__title1">HTML5</div>
+          <div class="container_s">
+            <div class="skills2 html" id="html90">90%</div>
+          </div>
+
+          <div class="skills__title1">CSS3/SCSS/SASS</div>
+          <div class="container_s">
+            <div class="skills2 css" id="css70">70%</div>
+          </div>
+
+          <div class="skills__title1">JAVASCRIPT/ REACT</div>
+          <div class="container_s">
+            <div class="skills2 javascript" id="javascript50">50%</div>
+          </div>
+        </div>
+
+        <div class="skills__block2">
+
+
+          <div class="skills__title1">GIT</div>
+          <div class="container_s">
+            <div class="skills2 git" id="git50">50%</div>
+          </div>
+
+          <div class="skills__title1">FIGMA/PHOTOSHOP</div>
+          <div class="container_s">
+            <div class="skills2 css" id="figma">70%</div>
+          </div>
+
+          <div class="skills__title1">BOOTSTRAP</div>
+          <div class="container_s">
+            <div class="skills2 javascript" id="javascript50">50%</div>
+          </div>
+
+        </div>
+
+        
+      </div>
+
+    </div>
+
+
+    <div class="wrapp_por">
+      <div class="portfolio reveal">
+        <div class="portfolio__title">My project...</div>
+        <div class="portfolio__item">
+          <div class="portfolio__item1 dot2 " onclick="currentSlide2(1)"></div>
+          <div class="portfolio__item1 dot2" onclick="currentSlide2(2)"></div>
+          <div class="portfolio__item1 dot2" onclick="currentSlide2(3)"></div>
+        </div>
+      </div>
+
+      <div class="slider">
+
+        <div class="slider__block  ">
+<!-- 
+          <div class="slider__block1 fade"> -->
+            <div class="slider__photo"> 1</div>
+            <div class="slider__photo">2</div>
+          <!-- </div> -->
+          <!-- <div class="slider__block2 fade2"> -->
+            <div class="slider__photo">3</div>
+            <div class="slider__photo">4
+            </div>
+          <!-- </div> -->
+
+        </div>
+
+        <div class="slider__block ">
+
+          <!-- <div class="slider__block1 fade"> -->
+            <div class="slider__photo">5</div>
+            <div class="slider__photo">6</div>
+          <!-- </div> -->
+          <!-- <div class="slider__block2 fade2"> -->
+            <div class="slider__photo">7</div>
+            <div class="slider__photo">8</div>
+          <!-- </div> -->
+
+        </div>
+
+
+        <div class="slider__block ">
+          <!-- <div class="slider__block1 fade"> -->
+            <div class="slider__photo">9</div>
+            <div class="slider__photo">10</div>
+          <!-- </div> -->
+          <!-- <div class="slider__block2 fade2"> -->
+            <div class="slider__photo">11</div>
+            <div class="slider__photo">12</div>
+          <!-- </div> -->
+        </div>
+      </div>
+
+      
+      <section>
+        <div class="work  ">
+          <div class="work__title">Work Experirnce</div>
+          <div class="work__block reveal">
+            <div class="work__name"></div>
+            <div class="work__text"></div>
+          </div>
+          <div class="work__block reveal">
+            <div class="work__name"></div>
+            <div class="work__text"></div>
+          </div>
+          <div class="work__block reveal">
+            <div class="work__name"></div>
+            <div class="work__text"></div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="Education  ">
+          <div class="Education__title">Work Experirnce</div>
+          <div class="Education__block reveal">
+            <div class="Education__name"></div>
+            <div class="Education__text"></div>
+          </div>
+          <div class="Education__block reveal">
+            <div class="Education__name"></div>
+            <div class="Education__text"></div>
+          </div>
+          <div class="Education__block reveal">
+            <div class="Education__name"></div>
+            <div class="Education__text"></div>
+          </div>
+        </div>
+      </section>
+
+
+  </main>
+  <div class="map">
+    <div class="map__google"><iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5086.888122354664!2d30.61770298993532!3d50.395561336940766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1638337180597!5m2!1sru!2sua"
+        width="100%" height="540" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+    <div class="map__img"></div>
+  </div>
+  </div>
+
+
+  <script src="js/jqstyle.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/style.js"></script>
+  <script src="js/game.js"></script>
+</body>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</html>

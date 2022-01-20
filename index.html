@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Counter</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	  
+	<div class="number" data-max="500">0</div>
+
+	<script>
+		var number = document.querySelector('.number'),
+		numberTop = number.getBoundingClientRect().top,
+		start = +number.innerHTML, end = +number.dataset.max;
+
+		window.addEventListener('scroll', function onScroll() {
+			if(window.pageYOffset > numberTop - window.innerHeight / 2) {
+				this.removeEventListener('scroll', onScroll);
+				var interval = setInterval(function() {
+					number.innerHTML = ++start;
+					if(start == end) {
+						clearInterval(interval);
+					}
+				}, 5);
+			}
+		});
+	</script>
+
+</body>
+</html>

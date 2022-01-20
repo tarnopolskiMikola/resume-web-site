@@ -1,0 +1,38 @@
+.Education {
+    width: 88%;
+    height: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+
+    &__title {
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+        height: 50px;
+        font-family: Impact, fantasy;
+        font-size: 40px;
+        padding-top: 16px;
+    }
+    &__block {
+        width: 99%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+        height: 284px;
+        margin-top: 45px;
+        background-color: rgb(188, 180, 233);
+        display: flex;
+        box-shadow: 0 0 10px 5px rgb(124, 122, 122);
+    }
+    &__name {
+        width: 24.5%;
+        height: 284px;
+        background-color: rgb(13, 63, 32);
+    }
+    &__text {
+        width: 76.5%;
+        height: 284px;
+        background-color: rgb(53, 90, 138);
+    }
+}

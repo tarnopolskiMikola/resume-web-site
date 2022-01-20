@@ -1,0 +1,148 @@
+.header {
+    height: 825px;
+    width: 100%;
+    background-color: rgb(182, 168, 122);
+
+    &__menu1 {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        z-index: 10;
+    }
+    &__menu {
+        @include breakpoint(lg1) {
+            margin-right: 0px;
+            width: auto;
+        }
+        margin-right: 130px;
+        width: 715px;
+        height: 120px;
+        display: flex;
+        justify-content: space-between;
+        &__item {
+            width: auto;
+            padding-left: 20px;
+            height: 100px;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: auto;
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            cursor: pointer;
+        }
+        &__item:hover {
+            color: orange;
+        }
+        &__itemL {
+            width: 200px;
+            color: black;
+            font-size: 30px;
+            margin-bottom: auto;
+            margin-top: 20px;
+            text-align: center;
+            padding-left: 100px;
+            @include breakpoint(lg1) {
+                padding-left: 0px;
+            }
+            cursor: pointer;
+        }
+    }
+}
+
+@keyframes photo-animation3 {
+    0% {
+        box-shadow: 0 0 5px 2.5px rgb(0, 0, 0);
+    }
+    50% {
+        box-shadow: 0 0 20px 10px rgb(0, 0, 0);
+    }
+    100% {
+        box-shadow: 0 0 40px 25px rgb(0, 0, 0);
+    }
+}
+.header__block {
+    width: 650px;
+    height: 705px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: block;
+    padding-top: 50px;
+    @include breakpoint(lg1) {
+        width: auto;
+    }
+    &__photo {
+        margin-top: 100px;
+        background: url(../images/DSC2.jpg) top no-repeat;
+        background-color: rgb(209, 202, 212);
+        margin-left: auto;
+        margin-right: auto;
+        width: 380px;
+        height: 380px;
+        border-radius: 50%;
+        //outline: 5px solid rgba(0, 0, 0, 0.9);
+
+        animation-iteration-count: infinite;
+        animation-duration: 3s;
+        animation-name: photo-animation3;
+    }
+    &__photo:hover {
+        box-shadow: 0 0 40px 20px rgb(58, 58, 58);
+    }
+
+    // &__title {
+    //     margin-top: 60px;
+    //     font-size: 40px;
+    //     text-align: center;
+    //     color: rgb(14, 13, 13);
+    //     height: 50px;
+    //     // background-color: cadetblue;
+    //     font-family: Impact, fantasy;
+    // }
+    &__text {
+        // background-color: rgb(131, 215, 218);
+        font-family: Impact, fantasy;
+        height: 50px;
+        text-align: center;
+        font-size: 20px;
+        padding-top: 10px;
+
+        transform: translate(410px, 0px);
+        opacity: 0;
+        transition: all 0.8s ease 0.3s;
+    }
+    &__bottom {
+        // background-color: rgb(86, 146, 148);
+        width: 100%;
+        height: 104px;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 110px;
+        padding-right: 110px;
+        cursor: pointer;
+        @include breakpoint(lg1) {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+    }
+    &__bottomG {
+        @include breakpoint(lg1) {
+            margin: 5px;
+        }
+        background-color: rgb(56, 55, 55);
+        width: 208px;
+        height: 59px;
+        margin-top: 20px;
+        border-radius: 6px;
+        text-align: center;
+        font-size: 30px;
+        padding-top: 10px;
+        font-family: Impact, fantasy;
+    }
+
+    &__bottomG:hover {
+        background-color: rgb(131, 131, 131);
+    }
+}
